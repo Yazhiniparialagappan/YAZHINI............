@@ -1,0 +1,9 @@
+import csv 
+import random csv
+File = open('test.csv', 'w+') 
+try: writer = csv.writer(csvFile) 
+writer.writerow(('SR', 'ID', 'Price')) 
+for i in range(10): 
+writer.writerow((i+1, random.randint(1, 100),
+ random.randint(100, 1000))) 
+finally: csvFile.close()
